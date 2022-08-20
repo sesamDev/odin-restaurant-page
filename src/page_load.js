@@ -24,4 +24,24 @@ export function initialPageLoad() {
     bgImage.setAttribute('id', 'backgroundImg')
     element.appendChild(bgImage);
 
+    //Nav buttons
+    const navButtons = document.createElement('div');
+    navButtons.classList.add('nav-button-container');
+    header.appendChild(navButtons);
+
+    const navBtnHome = document.createElement('button');
+    navBtnHome.classList.add('nav-button');
+    navBtnHome.innerText = 'Home';
+    navButtons.appendChild(navBtnHome);
+
+    const navBtnMenu = document.createElement('button');
+    navBtnMenu.classList.add('nav-button');
+    navBtnMenu.innerText = 'Menu';
+    navButtons.appendChild(navBtnMenu);
+
+    const navBtnAbout = document.createElement('button');
+    navBtnAbout.classList.add('nav-button');
+    navBtnAbout.innerText = 'About';
+    navButtons.appendChild(navBtnAbout);
+
 };
