@@ -1,1 +1,4 @@
-alert('Hello world!');
+import { initialPageLoad } from "./page_load";
+
+
+initialPageLoad();
