@@ -21,6 +21,7 @@ export function initialPageLoad() {
     //Background image
     const bgImage = new Image();
     bgImage.src = background;
+    bgImage.setAttribute('id', 'backgroundImg')
     element.appendChild(bgImage);
 
 };
