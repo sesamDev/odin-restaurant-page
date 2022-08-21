@@ -31,16 +31,19 @@ export function initialPageLoad() {
 
     const navBtnHome = document.createElement('button');
     navBtnHome.classList.add('nav-button');
+    navBtnHome.classList.add('home-button');
     navBtnHome.innerText = 'Home';
     navButtons.appendChild(navBtnHome);
 
     const navBtnMenu = document.createElement('button');
     navBtnMenu.classList.add('nav-button');
+    navBtnMenu.classList.add('menu-button');
     navBtnMenu.innerText = 'Menu';
     navButtons.appendChild(navBtnMenu);
 
     const navBtnAbout = document.createElement('button');
     navBtnAbout.classList.add('nav-button');
+    navBtnAbout.classList.add('about-button');
     navBtnAbout.innerText = 'About';
     navButtons.appendChild(navBtnAbout);
 
