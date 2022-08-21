@@ -43,9 +43,22 @@ div>#title {
     -moz-box-shadow: 3px 11px 20px 1px rgba(255, 255, 255, 0.6) inset;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+#contentCard {
+    background-color: var(--main-page-color);
+    border-radius: 0 0 1rem 1rem;
+    width: 600px;
+    height: auto;
+
+}
+
 #backgroundImg {
     width: 100vw;
-    height: auto;
+    height: 100%;
     position: absolute;
     top: 0;
     z-index: -1;

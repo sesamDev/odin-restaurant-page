@@ -44,4 +44,5 @@ export function initialPageLoad() {
     navBtnAbout.innerText = 'About';
     navButtons.appendChild(navBtnAbout);
 
+
 };
