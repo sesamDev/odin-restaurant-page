@@ -1,4 +1,5 @@
 import pizzaChef from './pizza-chef.jpeg'
+import pizzaMenuImg from './pizza-menu.jpeg'
 
 export function appendContentElement() {
     const element = document.createElement('div');
@@ -27,6 +28,43 @@ export function appendHomeContent() {
     const text = document.createElement('p');
     text.innerText = 'The finest pizzas since 1656.'
     content.appendChild(text);
+
+};
+
+export function appendMenuContent() {
+    //Main content card
+    const content = document.getElementById('contentCard');
+
+    //Creating home content
+    //Title
+    const title = document.createElement('h2');
+    title.innerText = "The amazing menu"
+    content.appendChild(title)
+
+    //Image
+    const pizza = new Image();
+    pizza.src = pizzaMenuImg;
+    content.appendChild(pizza);
+
+    //Text
+    const pizzas = [
+        'Margharita',
+        'Vesuvio',
+        'Calzone',
+        'Tefat',
+        'Kebab pizza',
+        'Gyros pizza',
+        'Viking pizza'
+    ]
+
+    for (let i = 1; i < pizzas.length; i++) {
+        const element = pizzas[i];
+        let menuItem = document.createElement('p');
+        menuItem.classList.add('menu-item');
+        menuItem.innerText = `${i}. ${element}`;
+        content.appendChild(menuItem);
+
+    }
 
 };
 

@@ -1,7 +1,12 @@
 import { initialPageLoad } from "./page_load";
-import { appendContentElement, appendHomeContent } from "./content";
+import {
+    appendContentElement,
+    appendHomeContent,
+    appendMenuContent
+} from "./content";
 import './style.css'
 
 initialPageLoad();
 appendContentElement();
-appendHomeContent();
+//appendHomeContent();
+appendMenuContent();
