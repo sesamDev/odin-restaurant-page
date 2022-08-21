@@ -2,7 +2,8 @@ import { initialPageLoad } from "./page_load";
 import {
     appendContentElement,
     appendHomeContent,
-    appendMenuContent
+    appendMenuContent,
+    appendAboutContent
 } from "./content";
 import './style.css'
 
@@ -34,7 +35,7 @@ navMenuBtn.addEventListener('click', () => {
 const navAboutBtn = document.querySelector('.about-button');
 navAboutBtn.addEventListener('click', () => {
     clearChildren();
-
+    appendAboutContent();
 });
 
 

@@ -1,5 +1,6 @@
 import pizzaChef from './pizza-chef.jpeg'
 import pizzaMenuImg from './pizza-menu.jpeg'
+import map from './map.jpg';
 
 export function appendContentElement() {
     const element = document.createElement('div');
@@ -65,6 +66,36 @@ export function appendMenuContent() {
         content.appendChild(menuItem);
 
     }
+
+};
+
+export function appendAboutContent() {
+    //Main content card
+    const content = document.getElementById('contentCard');
+
+    //Creating home content
+    //Title
+    const title = document.createElement('h2');
+    title.innerText = "About Pizzeria Samils"
+    content.appendChild(title)
+
+    //Image
+    const mapImg = new Image();
+    mapImg.src = map;
+    content.appendChild(mapImg);
+
+    //Text
+    const contact = document.createElement('p');
+    contact.innerText = 'Contact'
+    content.appendChild(contact);
+
+    const phone = document.createElement('p');
+    phone.innerText = '+46 123456789'
+    content.appendChild(phone);
+
+    const mail = document.createElement('p');
+    mail.innerText = 'pizzaSamils@pizzasamils.com'
+    content.appendChild(mail);
 
 };
 
